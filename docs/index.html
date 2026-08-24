@@ -41,11 +41,6 @@
 
 <body>
     <div class="reveal">
-        <div class="footer">
-            <small>
-                <a href="https://twitter.com/juanantoniobm" target="_blank">Twitter: @juanantoniobm</a>
-            </small>
-        </div>
         <div class="slides">
             <section class="title-slide" data-background-image="./images/pillars2.jpg">
                 <h1>
@@ -93,7 +88,7 @@
                             <td><img src="./images/leandroAvatar.jpg" width="70%" alt="Juan Antonio Breña Moral" /></td>
                             <td style="color: #336699; vertical-align: top">
                                 Leandro Loureiro<br />
-                                <div style="display:inline-block;">Engineering Manager @ ING NL</div>
+                                <div style="display:inline-block; white-space: nowrap;">Engineering Manager @ ING</div>
                                 <br />
                                 <a target="_blank" href="https://github.com/lealoureiro">GitHub</a> |
                                 <a target="_blank" href="https://nl.linkedin.com/in/lealoureiro">LinkedIn</a>
@@ -116,6 +111,16 @@
             </section>
             <section>
                 <section>
+                    <h2>The Problem</h2>
+                </section>
+                <section>
+                    <p>You can 10x write code</p>
+                    <p><b>But</b> you <b>can't</b> 10x the requirements</p>
+                    <p>Otherwise you 10x the <b>wrong</b> thing</p>
+                </section>
+            </section>
+            <section>
+                <section>
                 <h2>What is Plinth?</h2>
                 <p style="font-style: italic;font-size: 22px;">An opinionated AI-native workflow for evolving modern Java Enterprise SDLC practices through reusable Skills, Agents, Commands & MCP servers.</p>
                 <ul>
@@ -126,21 +131,22 @@
                 </section>
                 <section>
                     <h2>Typical workflow</h2>
-                    <div>
-                        /onboarding
-                          |
-                          v
-                        Issue
-                          |
-                          v
-                        /update-issue --> /explore-problem --> /create-acceptance-criteria
-                          |
-                          v
-                        /create-spec --> /explore-design
-                          |
-                          v
-                        /implement-spec --> /close-spec
-                      </div>
+                    <small>
+                        <div class="card agent compact">
+                            <div><code>/onboarding</code></div>
+                            <div class="arrow">↓</div>
+                            <div><strong>Issue</strong></div>
+                            <div class="arrow">↓</div>
+                            <div><code>/update-issue</code> → <code>/explore-problem</code> →
+                                <code>/create-acceptance-criteria</code></div>
+                            <div class="arrow">↓</div>
+                            <div><code>/create-spec</code> → <code>/explore-design</code></div>
+                            <div class="arrow">↓</div>
+                            <div><code>/implement-spec</code> → <code>/close-spec</code></div>
+                        </div>
+                    </small>
+                    <p><small><a href="https://github.com/jabrena/plinth"
+                                target="_blank">github.com/jabrena/plinth</a></small></p>
                 </section>
                 <section>
                     <h2>You decide how to use it</h2>

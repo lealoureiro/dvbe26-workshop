@@ -21,6 +21,19 @@
             margin-bottom: 10px;
             padding-bottom: 0;
         }
+
+        .reveal .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .reveal .card {
+            border: 3px solid var(--local);
+            border-radius: 14px;
+            padding: .65em;
+            background: var(--surface);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, .08);
+        }
+
     </style>
 
     <link rel="icon" href="images/java-icon.png" type="image/png" />
@@ -37,7 +50,7 @@
             <section class="title-slide" data-background-image="./images/pillars2.jpg">
                 <h1>
                     <span style="display: inline-block; color: black; background: #ffffff;">
-                        AI-Native Tooling for Java Development 
+                        AI-Native Tooling for Java Development
                     </span>
                 </h1>
                 <p>
@@ -93,10 +106,51 @@
             <section>
                 <h2>Agenda · 30 minutes</h2>
                 <ol>
-                    <li>PENDING</li>
+                    <li>Intro</li>
+                    <li>The problem</li>
+                    <li>Plinth as AI-Native workflow</li>
                 </ol>
             </section>
-
+            <section>
+                <h2>Intro</h2>
+            </section>
+            <section>
+                <section>
+                <h2>What is Plinth?</h2>
+                <p style="font-style: italic;font-size: 22px;">An opinionated AI-native workflow for evolving modern Java Enterprise SDLC practices through reusable Skills, Agents, Commands & MCP servers.</p>
+                <ul>
+                    <li>13 Commands</li>
+                    <li>9 Agents</li>
+                    <li>125 Skills</li>
+                </ul>
+                </section>
+                <section>
+                    <h2>Typical workflow</h2>
+                    <div>
+                        /onboarding
+                          |
+                          v
+                        Issue
+                          |
+                          v
+                        /update-issue --> /explore-problem --> /create-acceptance-criteria
+                          |
+                          v
+                        /create-spec --> /explore-design
+                          |
+                          v
+                        /implement-spec --> /close-spec
+                      </div>
+                </section>
+                <section>
+                    <h2>You decide how to use it</h2>
+                    <ol>
+                        <li>Use the AI-Native development workflow</li>
+                        <li>Refactor your code with Skills</li>
+                        <li>...</li>
+                    </ol>
+                </section>
+            </section>
         </div>
     </div>
 

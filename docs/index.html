@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="dist/theme/white.css">
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
     <style>
-
         :root {
             --risk: #c62828;
             --context: #1565c0;
@@ -68,24 +67,56 @@
             border-color: var(--evidence);
         }
 
+        .reveal .card.context {
+            border-color: var(--context);
+        }
+
+        .reveal .card.agent {
+            border-color: var(--agent);
+        }
+
+        .reveal .context {
+            color: var(--context);
+        }
+
+        .reveal .muted {
+            color: #60656c;
+        }
+
+        .reveal .card,
+        .reveal .card * {
+            color: #000;
+        }
+
+        .reveal .section-divider .act-number {
+            color: var(--agent);
+            font-size: .75em;
+            font-weight: 800;
+            letter-spacing: .12em;
+        }
+
+        .reveal .section-divider h2 {
+            color: var(--context);
+            font-size: 2.2em;
+        }
+
         .reveal .compact {
             font-size: .72em;
         }
 
         .reveal .statement {
-    font-size: 1.5em;
-    font-weight: 700;
-    line-height: 1.25;
-}
+            font-size: 1.5em;
+            font-weight: 700;
+            line-height: 1.25;
+        }
 
         .reveal .statement.impact {
-    font-size: 2.2em;
-}
+            font-size: 2.2em;
+        }
 
         .reveal .risk {
-    color: var(--risk);
-}
-
+            color: var(--risk);
+        }
     </style>
 
     <link rel="icon" href="images/java-icon.png" type="image/png" />
@@ -155,16 +186,24 @@
                 <ol>
                     <li>Intro</li>
                     <li>The problem</li>
+                    <li>Local correctness</li>
                     <li>Plinth as AI-Native workflow</li>
                 </ol>
             </section>
+
             <section>
                 <h2>Intro</h2>
+                <br />
+                <p>AI is <b>changing</b> software engineering</p>
+                <p>The way we work is <b>already</b> different</p>
+                <p>And with it come <b>new challenges</b> to address</p>
+                <p>Let's start with the most <b>visible</b> one: speed</p>
             </section>
+
             <section>
                 <section>
                     <h2>The Problem</h2>
-                    <br/>
+                    <br />
                     <p>You <b>can</b> 10x code implementation</p>
                     <p><b>But</b> you <b>can't</b> 10x the requirements</p>
                     <p>Otherwise you 10x the <b>wrong</b> thing</p>
@@ -181,15 +220,41 @@
                     <p>not the whole consequence!</p>
                 </section>
             </section>
+
             <section>
                 <section>
-                <h2>What is Plinth?</h2>
-                <p style="font-style: italic;font-size: 22px;">An opinionated AI-native workflow for evolving modern Java Enterprise SDLC practices through reusable Skills, Agents, Commands & MCP servers.</p>
-                <ul>
-                    <li>13 Commands</li>
-                    <li>9 Agents</li>
-                    <li>125 Skills</li>
-                </ul>
+                    <h2>A way to address it?</h2>
+                    <h2>Local correctness</h2>
+                </section>
+                <section>
+                    <br />
+                    <h2>Go 1x on the spec</h2>
+                    <h2>10x on the code</h2>
+                    <div class="grid-2 compact">
+                        <div class="card context">
+                            <strong>1x · Design</strong>
+                            <br />
+                            Invest quality time gathering and refining the requirements
+                        </div>
+                        <div class="card evidence">
+                            <strong>10x · Implementation</strong>
+                            <br />
+                            Safe to accelerate: intent, constraints and verification path are already defined
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>What is Plinth?</h2>
+                    <p style="font-style: italic;font-size: 22px;">An opinionated AI-native workflow for evolving modern
+                        Java Enterprise SDLC practices through reusable Skills, Agents, Commands & MCP servers.</p>
+                    <ul>
+                        <li>13 Commands</li>
+                        <li>9 Agents</li>
+                        <li>125 Skills</li>
+                    </ul>
                 </section>
                 <section>
                     <h2>Typical workflow</h2>
